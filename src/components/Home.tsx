@@ -21,7 +21,7 @@ const App: React.FC = () => {
 
   return (
     <div>
-      {/* Your app content */}
+      {}
     </div>
   );
 };

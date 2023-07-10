@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link} from 'react-router-dom';
 import Main from './main';
+import Footer from './components/Footer';
 import './App.css';
 
 function App() {
@@ -8,11 +9,19 @@ function App() {
     <div className="App">
        <>  
         <div>
-            <li><Link to='/'>Home</Link></li>
-            <li><Link to='/login'>Login</Link></li>
-            <li><Link to='/signup'>SignUp</Link></li>
+          <nav>
+            <Link to='/'>Home</Link>
+            <Link to='/URL'>My URLs</Link>
+            <Link to='/features'>Features</Link>
+            <Link to='/pricing'>Pricing</Link>
+            <Link to='/analytics'>Analytics</Link>
+            <Link to='/FAQ'>FAQs</Link>
+            <Link to='/login'>Login</Link>
+            <Link to='/trial'>Try for free</Link>
+            </nav>
           <hr />
-          <Main />       
+          <Main /> 
+          <Footer />      
         </div>   
       </>
     </div>
